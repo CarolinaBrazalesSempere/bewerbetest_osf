@@ -38,6 +38,7 @@ form {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    
 }
 
 .title {
@@ -61,26 +62,26 @@ h1 {
     margin-left: 40px;
 }
 
-
-
-img {
-    width: 150px;
-    padding-bottom: 8px;
-}
-
 .logo {
     padding: 24px;
 }
 
+.logo > img {
+    width: 150px;
+    padding-bottom: 8px;
+}
 .ecc-doc {
     position: absolute;
     z-index: 9999;
     top: 20%;
 }
 
-
 .ecc-doc-container {
     position: absolute;
+}
+
+.ecc-doc > img {
+    width: 150px;
 }
 .ecc-doc_info{
     width: 400px;

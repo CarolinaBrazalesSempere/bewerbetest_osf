@@ -80,7 +80,7 @@ const validateInputs = () => {
   }
 
   if (anrede == "-1") {
-    alert("Andrede ist erforderlich");
+    alert("Anrede ist erforderlich");
   }
 };
 
