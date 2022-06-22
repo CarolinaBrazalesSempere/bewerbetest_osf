@@ -24,8 +24,6 @@ const form = document.getElementById("form");
 const username = document.getElementById("username");
 const lastname = document.getElementById("lastname");
 const email = document.getElementById("email");
-const interest = document.getElementById("interest").value;
-const anrede = document.getElementById("anrede").value;
 
 const setError = (element, message) => {
   const inputControl = element.parentElement;
@@ -55,31 +53,34 @@ const validateInputs = () => {
   const usernameValue = username.value.trim();
   const lastName = lastname.value.trim();
   const emailValue = email.value.trim();
-  const interestValue = interest.selectedIndex != -1;
+  const interest = document.getElementById("interest").options[0].value;
+  const anrede = document.getElementById("anrede").options[0].value;
 
   if (usernameValue === "") {
-    setError(username, "Username is required");
+    setError(username, "Vorname ist erforderlich");
   } else {
     setSuccess(username);
   }
   if (lastName === "") {
-    setError(lastname, "Lastname is required");
+    setError(lastname, "Nachname ist erforderlich");
   } else {
     setSuccess(lastname);
   }
 
   if (emailValue === "") {
-    setError(email, "Email is required");
+    setError(email, "Email ist erforderlich");
   } else if (!isValidEmail(emailValue)) {
-    setError(email, "Provide a valid email address");
+    setError(email, "Geben Sie eine gültige E-Mail Adresse an");
   } else {
     setSuccess(email);
   }
 
-  if (interestValue === "-1") {
-    setError(interest, "Choose one");
-  } else {
-    setSuccess(interest);
+  if (interest == "-1") {
+    alert("Interesse ist erforderlich");
+  }
+
+  if (anrede == "-1") {
+    alert("Andrede ist erforderlich");
   }
 };
 

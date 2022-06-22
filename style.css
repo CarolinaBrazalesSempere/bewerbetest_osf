@@ -189,8 +189,9 @@ footer {
 
 .input-control .error {
     color: #ff3860;
-    font-size: 9px;
+    font-size: 12px;
     height: 13px;
+    padding-top: 4px;
 }
 
 .privacy-data {
