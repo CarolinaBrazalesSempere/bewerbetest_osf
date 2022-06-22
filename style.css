@@ -36,7 +36,7 @@ form {
 .bg-banner {
     background-image: url('assets/img/header.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     
 }
