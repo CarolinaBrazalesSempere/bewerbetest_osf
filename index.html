@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Hermes Paketversand</title>
+</head>
+
+<body>
+    <section>
+
+        <div class="logo"><img src="assets/img/hermes_logo.png" alt=""></div>
+        <div class="bg-banner">
+            <div class="title">
+                <h1>Die neusten<br>eCommerce Insights<br>für Sie</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container_form">
+                <form id="form" class="form">
+
+                    <label for="countries">Land <strong>*</strong></label>
+                    <select id="countries" name="countries">
+                    </select>
+
+
+                    <div class="input-control">
+                        <label for="interest">Interesse<strong>*</strong></label>
+                        <select id="interest" name="interest">
+                            <option value="-1">Bitte wählen</option>
+                            <option value="0">Ich möchte wissen, wo mein Paket ist</option>
+                            <option value="1">Wann kommt mein Paket an?</option>
+                            <option value="2">Wie mache ich internationale Sendungen?</option>
+                        </select>
+                        <div class="error"></div>
+                    </div>
+
+
+                    <label for="anrede">Anrede <strong>*</strong></label>
+                    <select id="anrede" name="anrede">
+                        <option value="-1">Bitte wählen</option>
+                        <option value="1">Frau</option>
+                        <option value="2">Herr</option>
+                        <option value="3">Non binary</option>
+                    </select>
+
+                    <div class="input-control">
+                        <label for="fname">Vorname <strong>*</strong></label>
+                        <input type="text" id="username" name="fname">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="lname">Nachname <strong>*</strong></label>
+                        <input type="text" id="lastname" name="lastname">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="email">E-mail <strong>*</strong></label>
+                        <input id="email" name="email">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="phone">Telefonnumer</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="input-control">
+                        <label for="unternehmen">Unternehmen</label>
+                        <input type="text" id="unternehmen" name="unternehmen">
+                    </div>
+
+                    <div class="input-control">
+                        <label for="berufsbezeichnung">Berufsbezeichnung</label>
+                        <input type="text" id="berufsbezeichnung" name="berufsbezeichnung">
+                    </div>
+
+
+                    <div class="privacy-data">
+                        <input type="checkbox" id="privacydata" name="privacydata" value="privacydata">
+                        <label for="privacydata">Ja, ich möchte von der Hermes über ihre Paket- und Serviceleistungen
+                            für
+                            Geschäftskunden (Newsletter, Gutscheine, Aktionen, Kundenzufriedenheitsumfragen) sowie über
+                            geschäftliche Vertragsangebote informiert werden</label>
+                    </div>
+
+                    <p><strong>*</strong> Pflichtfeld</p>
+                    <p>Bei Fragen erreichen Sie uns per E-mail unter <a
+                            href="marketing@hermesworld.com">marketing@hermesworld.com</a></p>
+
+                    <div class="btn"><button type="submit">Absenden</button></div>
+
+                </form>
+            </div>
+            <div class="container_info">
+                <p class="subtitle">Stadt, Land, Los!</p>
+                <p>Der Weg zu kundenorienterten Zustellungs- und Retourenlösungen in der Stadt und auf dem Land.</p>
+
+                <div class="ecc-doc-container">
+                    <div class="ecc-doc"><img src="assets/img/ecc-document.png" alt=""></div>
+                    <div class="ecc-doc_info">
+                        <p>Insights der Studie:</p>
+                        <p>Stadt vs. Land</p>
+                        <p><i class="fa fa-check"></i>Online-Shoppingverhalten</p>
+                        <p><i class="fa fa-check"></i>Top-Zustellkriterien</p>
+                        <p><i class="fa fa-check"></i>Retourenablauf</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="bg-footer">
+            <footer class="container">
+                <div class="info-footer">
+                    <div>
+                        <p class="title-footer">© 2019 Hermes Germany GmbH</p>
+                        <a href="">Impressum</a>
+                        <a href="">AGB</a>
+                        <a href="">Datenschutz</a>
+                        <a href="">Sicherheitshinweise</a>
+                    </div>
+                    <div>
+                        <p class="title-footer">Globale Hermes Links</p>
+                        <a href="">Über uns</a>
+                        <a href="">Presse</a>
+                        <a href="">Karriere</a>
+                        <a href="">Blog</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
